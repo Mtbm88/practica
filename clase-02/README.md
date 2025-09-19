@@ -160,7 +160,30 @@ git push -u origin main
 
  ```sh 
  git branch name # crea una rama 
- git branch -av #ñostar ramas remotas y locales
+ git branch -av #mostar ramas remotas y locales
  git branch switch name-branch # cambio de ramas 
  git switch -c nombre rama #crear una rama y moverse a esa rama
  ```
+ 
+
+ ##  Comparar ramas
+
+ ```sh 
+git diff rama1..rama2 ##compara dos ramas
+git diff nombre rama ## compara la rama actual y otra
+git diff main #comparar rama actual con main
+git diff --name-only rama1..rama2 ##Ver solo los archivos que difieren
+git diff commit1..commit2 #comparar commits especificos 
+ ```
+
+ ## borrar ramas
+ ```sh 
+ git branch -d nombre-rama #borrar rama local solo si está mergeada
+ git branch -D nombre-rama #forzar borrado de rama local
+ git push origin --delete nombre-rama #borrar rama remota
+ git remote prune origin #Limpiar referencias a ramas remotas borradas:
+ ```
+
+ # Merge
+
+ es el comando que se utiliza para combinar los cambios de dos o más ramas en una sola rama unificada, integrando su historial de confirmaciones de manera segura sin perder el trabajo
