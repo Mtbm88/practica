@@ -124,12 +124,25 @@ git remote remove origin
  ```
  
  3) verificamos que esta bien 
- git remote -v
-
+```sh 
+git remote -v
+```
  deberiamos ver algo similar
+```sh
  origin  https://github.com/Mtbm88/practica.git (fetch)
 origin  https://github.com/Mtbm88/practica.git (push)
-
+```
 4)  rehacemos el push 
-
+```sh
 git push -u origin main
+``` 
+
+### ramas
+
+ ```sh 
+ git branch name # crea una rama 
+ git branch -av #ñostar ramas remotas y locales
+ git branch switch name-branch # cambio de ramas 
+ git switch -c nombre rama #crear una rama y moverse a esa rama
+ ```
+ 
