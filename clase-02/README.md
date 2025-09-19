@@ -98,3 +98,38 @@ git log --oneline -2 ##corto solo el mensaje y los ultimos 2 commits
 ```sh
 git diff
 ```
+
+## Branches o ramas. 
+
+Nosotros ya tenemos la rama main (la rama local) y origin main (la rama remota)
+
+```sh
+git branch # local
+git branch -a
+git branch -l 
+git branch -r
+git branch -av
+
+```
+
+## como solucionar el error de poner mal la dirección del repo 
+1) primero elimina el origen 
+```sh 
+git remote remove origin
+````
+
+2) Agrega el remote con la url 
+ ```sh
+ git remote add origin https://github.com/Mtbm88/practica.git
+ ```
+ 
+ 3) verificamos que esta bien 
+ git remote -v
+
+ deberiamos ver algo similar
+ origin  https://github.com/Mtbm88/practica.git (fetch)
+origin  https://github.com/Mtbm88/practica.git (push)
+
+4)  rehacemos el push 
+
+git push -u origin main
