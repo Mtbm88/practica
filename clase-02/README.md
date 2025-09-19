@@ -75,6 +75,26 @@ git commit -am "mensaje" #Se agregan los archivos modificados y no se abre el ed
 
 ```
 
+
+
 **Note** Los mensajes idealmente pueden tener como maximo 80 caracteres. 
 
 *idealmente hay que dividir las tareas*
+
+
+**Note** Para salir del editor 
+presiona Esc y luego escribe :wq (para guardar y salir) o :q! (para salir sin guardar) y presiona Enter. 
+
+### ver los commits dentro del repostitorio 
+
+```sh 
+git log #largo con detalles
+git log --oneline #corto solo el mensaje
+git log -2 #me muestra los ultimos 2 commits del listado
+git log --oneline -2 ##corto solo el mensaje y los ultimos 2 commits
+```
+
+### Ver la diferencia entre el working directory y el local repo 
+```sh
+git diff
+```
