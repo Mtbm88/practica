@@ -43,4 +43,17 @@ git switch main
 git merge dev
 ```
 
+## hacer un commit sin cambiar el mensaje pero agregando archivos o linea de codigo 
+
+```sh 
+gir add. 
+git commit --amend --no- edit 
+```
+
+## Agregar modificaciones de archivos granularmente, Agregar partes del codigo agregado en un archivo
+
+```sh
+git add --patch
+```
+
 
