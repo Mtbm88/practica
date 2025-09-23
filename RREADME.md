@@ -61,6 +61,7 @@ git add --patch
 git config --global alias.s "status"
 git config --global alias.ll "log"
 git config --global alias.l "log --online"
+git config --global alias.c "commit -m"
 git config --global alias.amend "commit  --amend" 
 ```
 
