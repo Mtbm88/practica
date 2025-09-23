@@ -56,4 +56,15 @@ git commit --amend --no- edit
 git add --patch
 ```
 
+## GIT ALIAS
+```sh
+git config --global alias.s "status"
+git config --global alias.ll "log"
+git config --global alias.l "log --online"
+git config --global alias.amend "commit  --amend" 
+```
+
+```sh 
+git config --get-regexp alias
+```
 
